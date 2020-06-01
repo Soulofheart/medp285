@@ -1,0 +1,194 @@
+<!-- Full-width images with number and caption text -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Petra.SoulofheART MEDP 285</title>
+<meta name="viewport" content="width=device-width, initial-scale/1">
+<meta name="description" content="Summer Class 2020"/>
+<meta name="author" content="Petra Zion"/>
+
+
+<!-- Slideshow container -->
+<style>
+
+  body {
+
+    font-family: Verdana, sans-serif;
+
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .img {
+    vertical-align: middle;
+    max-width: 50%;
+    height: auto;
+
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    width: 75%; /*play with scale to alter layout*/
+    margin: auto; /*centers the content*/
+
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 2;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="mySlides fade">
+   <h4>2020 let's go</h4>
+    <img src="img/ss1.jpg" style= "width:100%">
+  </div>
+
+  <div class="slideshow-container">
+  <div class="mySlides fade">
+    <h4>Home! What is home</h4>
+    <img src="TheMachineImages/1.jpg" alt="TheMachineImages/1" class="responsive" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <h4>Perhaps home is not a place but simply an irrevocable condition.
+― James Baldwin, Giovanni’s Room</h4>
+    <img src="img/ss3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <h4>The Air Ship of justice will come.</h4>
+    <img src="TheMachineImages/2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <h4>"I can't breath"</h4>
+    <img src="TheMachineImages/3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+      <h4>Be and see the machine. Who was first? </h4>
+    <img src="TheMachineImages/4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <h4>The king!</h4>
+    <img src="TheMachineImages/5.jpg" style="width:100%">
+  </div>
+
+
+  <div class="mySlides fade">
+      <h4>“The king!</h4>
+    <img src="img/ss4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+  <h4>Kill the king.</h4>
+    <img src="img/ss11.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <h4>Press now.</h4>
+    <img src="TheMachineImages/9.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <h4>When the mind's an empty room. The clear days come. -Wendell Berry</h4>
+    <img src="img/ss2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <h4>No words.</h4>
+    <img src="TheMachineImages/6.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+      <h4>Let us start here with the truth.</h4>
+    <img src="img/ss7.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <h4>Look at how a single candle can both defy and define the darkness.
+― Anne Frank</h4>
+    <img src="img/ss5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <h4>A long unknown way.</h4>
+    <img src="img/ss6.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+      <h4>"Real art is alwways free.""</h4>
+    <img src="TheMachineImages/7.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+  <h4>But art helps and real art is alwways free.</h4>
+    <img src="TheMachineImages/8.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+      <h4>Fill the emptyness.</h4>
+    <img src="img/ss8.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <h4>Re-Start.</h4>
+    <img src="img/ss9.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <h4>Injustice anywhere is a threat to justice everywhere.
+― Martin Luther King Jr.</h4>
+    <img src="TheMachineImages/10.jpg" style="width:100%">
+  </div>
+
+  </body>
+
+
+
+  <script>
+    // create variable to index the slides - to track the slides
+    var slideIndex = 0;
+    // call a function that does something with the slides
+    showSlides();
+
+    function showSlides() {
+      // a variable to be used in the for loop - i for "index"
+      var i;
+      // target the slides in the DOM as slides
+      var slides = document.getElementsByClassName("mySlides");
+      // loop through the slides showing them one at a time (display)
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; //none hides the slides
+      }
+      // increment the slides from 0 to the total number of slides (for loop)
+      slideIndex++;
+      // loop back to the beginning
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block"; //show the slide
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+  </script>
+
+</body>
+</html>
